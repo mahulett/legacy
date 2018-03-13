@@ -15,77 +15,78 @@
 </head>
 
 <body>
-<header>
-	<div class="container">
-		<nav>
-			<ul>
-				<li><a href="http://duncanautobody.com/">Duncan Autobody</a></li>
-				<li><a href="http://www.scottscollisioncenters.com">Scott's Collision Center</a></li>
-			</ul>
-		</nav>
-		<div class="logo">
-			<img src="img/logo.svg" class="img-responsive" alt="Legacy Autobody" title="Legacy Autobody">
+	<header>
+		<div class="wrapper">
+			<nav class="nav">
+				<div class="nav-logo">
+					<img src="img/logo.svg" alt="Legacy Autobody" title="Legacy Autobody">
+				</div>
+				<a href="#" class="nav-icon" onclick="openNavMenu()">
+						<div class="nav-bar"></div>
+				</a>
+				<ul class="nav-links" id="nav-menu">
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Certifications</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Employment</a></li>
+					<li><a href="#">Locations</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Free Estimate</a></li>
+				</ul>
+			</nav>
 		</div>
-		<div class="find-location">
-			<p>See which of our shops is the most convenient for you.</p>
-			<a role="button" id="modal-button" class="location-button">Find my location</a>
+	</header>
+	<section class="homepage-header">
+		<div class="">
+			<h1>Free Estimate Tool</h1>
+			<p>Get a free estimate quickly right from your phone/</p>
+			<a class="button" href="#">Get my estimate</a>
 		</div>
-		<div id="popup" class="overlay">
-			<div class="popup">
-				<h2>Which location is closest to you?</h2>
-				<a class="close" href="#close">&times;</a>
-				<div class="content">
-					<div class="row">
-						<div class="col-xs-12 col-md-6">
-							<div class="location-block allentown">
-								<div class="link">
-									<a href="http://duncanautobody.com/directions_allentown.html"><h3>Duncan Autobody</h3><p>Allentown, PA</p></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<div class="location-block easton">
-								<div class="link">
-									<a href="http://www.scottscollisioncenters.com/auto-body-easton-pa.php"><h3>Scott's Collision Center</h3><p>Easton, PA</p></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<div class="location-block quakertown">
-								<div class="link">
-									<a href="http://duncanautobody.com/directions_quakertown.html"><h3>Duncan Autobody</h3><p>Quakertown, PA</p></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<div class="location-block stroudsburg">
-								<div class="link">
-									<a href="http://www.scottscollisioncenters.com/auto-body-stroudsburg-pa.php"><h3>Scott's Collision Center</h3><p>Stroudsburg, PA</p></a>
-								</div>
-							</div>
-						</div>
-					</div>
+	</section>
+
+	<section class="about">
+		<div class="wrapper">
+			<h2>About Us</h2>
+			<div class="flex-horizontal">
+				<div class="flex-half">
+					<img class="" src="/" alt="">
+				</div>
+				<div class="flex-half">
+					<p>Lorem ipsum text</p>
+					<a class="button" href="#">Learn more</a>
 				</div>
 			</div>
 		</div>
-	</div>
-</header>
-<div class="about-us section">
-	<div class="container">
-		<h2>About Us</h2>
-		<div class="row">
-			<div class="col-xs-12 col-md-4">
-				<img src="img/about-us.jpg" class="img-responsive" alt="Duncan Autobody Allentown" title="Duncan Autobody Allentown">
-			</div>
-			<div class="col-xs-12 col-md-8">
-				<p>Legacy Autobody Group is made up of Duncan Autobody, located in Allentown and Quakertown, PA, and Scott’s Collision Centers, located in Easton and Stroudsburg, PA. Our I-Car Gold Class, state-of-the-art facilities have numerous OEM and factory certifications by major automobile manufacturers and this allows us to expertly repair any vehicle. From the highest quality collision repair to repairing the smallest ding or dent, we have the skills and the modern equipment required to achieve a flawless result.</p>
-				<p>While your vehicle is in our hands, you can rest assured that it will be safe in our secure lots. Our technicians are I-CAR and ASE trained and certified, and our appraisal staff is fully licensed. All of our shops have best-in-class CSI scores consistently exceeding 98%. Because of these measures, our auto body shops guarantee that you will be completely satisfied with our work.</p>
-				<p>Just a quick call to one of our locations and we will tow your vehicle to our secure lots to begin repairs. Let us take the stress out of having an accident. We will handle everything, from the insurance claims red tape to a perfect repair every time. Make the right decision after a collision, contact Legacy Autobody.</p>
-			</div>
-		</div>
-		<div class="affiliations">
+	</section>
+
+	<section class="services">
+		<div class="wrapper">
+			<h2>Why Legacy Autobody Group?</h2>
+			<ul class="services-list">
+				<li class="services-item">
+					<div class="services-overlay"></div>
+					<h3>Estimates</h3>
+					<a class="button" href="#">Learn more</a>
+				</li>
+				<li class="services-item">
+					<div class="services-overlay"></div>
+					<h3>Estimates</h3>
+					<a class="button" href="#">Learn more</a>
+				</li>
+				<li class="services-item">
+					<div class="services-overlay"></div>
+					<h3>Estimates</h3>
+					<a class="button" href="#">Learn more</a>
+				</li>
+				<li class="services-item">
+					<div class="services-overlay"></div>
+					<h3>Estimates</h3>
+					<a class="button" href="#">Learn more</a>
+				</li>
+			</ul>
 			<h3>Certifications</h3>
-			<div class="certifications">
+			<ul class="services-certifications">
 				<img src="img/i-car.jpg" alt="I-Car Gold Class Collision Repair" title="I-Car Gold Class Collision Repair">
 				<img src="img/honda.jpg" alt="Honda - ProFirst Collision Repair Facility" title="Honda - ProFirst Collision Repair Facility">
 				<img src="img/nissan.jpg" alt="Nissan - Certified Collision Repair Network" title="Nissan - Certified Collision Repair Network">
@@ -94,72 +95,101 @@
 				<img src="img/vw.jpg" alt="Volkswagen - Certified Collision Repair Facility" title="Volkswagen - Certified Collision Repair Facility">
 				<img src="img/fca.png" alt="Fiat Chrysler Automobiles" title="Fiat Chrysler Automobiles">
 				<img src="img/hyundai.jpg" alt="Hyundai - Recognized Collision Repair Center" title="Hyundai - Recognized Collision Repair Center">
-			</div>
+			</ul>
+			<a class="button" href="#">Learn more</a>
 		</div>
-	</div>
-</div>
-<div class="services section">
-	<div class="container">
-		<h2>Services</h2>
-		<div class="row">
-			<div class="col-xs-12 col-md-4 col-md-push-8">
-				<img src="img/services.jpg" class="img-responsive" alt="Our Services" title="Our Services">
-			</div>
-			<div class="col-xs-12 col-md-8 col-md-pull-4">
-				<p>Legacy Autobody Group is proud to offer the following services:</p>
-					<ul>
-						<li><strong>ESTIMATES:</strong> When you visit a Legacy Autobody location, you will receive an estimate by one of our PA licensed appraisers.</li>
-						<li><strong>COLLISION REPAIR:</strong> For quality-conscious consumers, Legacy Autobody shops in the area.</li>
-						<li><strong>DIRECT INSURANCE CLAIMS PROCESSING:</strong> Legacy Autobody has direct repair agreements with many top insurance companies. This allows us to process the insurance claim directly for our customers.</li>
-						<li><strong>PAINTLESS DENT REPAIR:</strong> Our skilled technicians use specially designed tools to form body metal to its original condition.</li>
-						<li><strong>MECHANICAL:</strong> We handle all mechanical and suspension damages caused by the accident.</li>
-						<li><strong>LIFETIME WARRANTY:</strong> We provide a complete and comprehensive LIFETIME warranty for all repairs performed at our shops.</li>
-						<li><strong>TOWING:</strong> In the case of an accident you may request that your car be towed directly to our facility.</li>
-						<li><strong>ON-SITE CAR RENTAL:</strong> On-site car rentals are available through our offices.</li>
-					</ul>
+	</section>
 
+	<section class="locations">
+		<div class="wrapper">
+			<h2>Locations</h2>
+		</div>
+		<div class="locations-map">
+		</div>
+		<ul class="locations-list">
+			<li class="locations-item">
+				<img class="icon" src="/" alt="">
+				<h3>CARSTAR Allentown</h3>
+				<h4>Duncan Autobody<br>Allentown, PA</h4>
+				<a class="button services-button" href="#">Learn more</a>
+			</li>
+			<li class="locations-item">
+				<img class="icon" src="/" alt="">
+				<h3>CARSTAR Quakertown</h3>
+				<h4>Duncan Autobody<br>Quakertown, PA</h4>
+				<a class="button services-button" href="#">Learn more</a>
+			</li>
+			<li class="locations-item">
+				<img class="icon" src="/" alt="">
+				<h3>CARSTAR Easton</h3>
+				<h4>Scott's Collision Center<br>Easton, PA</h4>
+				<a class="button services-button" href="#">Learn more</a>
+			</li>
+			<li class="locations-item">
+				<img class="icon" src="/" alt="">
+				<h3>CARSTAR Stroudsburg</h3>
+				<h4>Scott's Collision Center<br>Stroudsburg, PA</h4>
+				<a class="button services-button" href="#">Learn more</a>
+			</li>
+		</ul>
+	</section>
+
+	<section class="reviews">
+		<div class="wrapper">
+			<h2>What our customers have to say</h2>
+			<ul class="reviews-list">
+				<li class="reviews-item">
+					<img class="icon" src="/" alt="">
+					<p>Review 1</p>
+					<p>-Tom Smith</p>
+				</li>
+				<li class="reviews-item">
+					<img class="icon" src="/" alt="">
+					<p>Review 1</p>
+					<p>-Tom Smith</p>
+				</li>
+				<li class="reviews-item">
+					<img class="icon" src="/" alt="">
+					<p>Review 1</p>
+					<p>-Tom Smith</p>
+				</li>
+				<li class="reviews-item">
+					<img class="icon" src="/" alt="">
+					<p>Review 1</p>
+					<p>-Tom Smith</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="estimate">
+		<div class="wrapper">
+			<h2>Free Estimate Tool</h2>
+			<div class="flex-horizontal">
+				<div class="flex-half">
+					<p>Lorem ipsum text</p>
+					<a class="button" href="#">Learn more</a>
+				</div>
+				<div class="flex-half">
+					<img class="" src="/" alt="">
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
-<div class="locations section">
-	<div class="container">
-		<h2>Our Locations</h2>
-		<div class="row">
-			<div class="col-xs-12 col-md-6">
-				<div class="location-block allentown">
-					<div class="link">
-						<a href="http://duncanautobody.com/directions_allentown.html"><h3>Duncan Autobody</h3><p>Allentown, PA</p></a>
-					</div>
+	</section>
+
+	<footer>
+		<div class="wrapper">
+			<div class="flex-horizontal">
+				<div class="flex-fourth">
 				</div>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="location-block easton">
-					<div class="link">
-						<a href="http://www.scottscollisioncenters.com/auto-body-easton-pa.php"><h3>Scott's Collision Center</h3><p>Easton, PA</p></a>
-					</div>
+				<div class="flex-fourth">
 				</div>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="location-block quakertown">
-					<div class="link">
-						<a href="http://duncanautobody.com/directions_quakertown.html"><h3>Duncan Autobody</h3><p>Quakertown, PA</p></a>
-					</div>
+				<div class="flex-fourth">
 				</div>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="location-block stroudsburg">
-					<div class="link">
-						<a href="http://www.scottscollisioncenters.com/auto-body-stroudsburg-pa.php"><h3>Scott's Collision Center</h3><p>Stroudsburg, PA</p></a>
-					</div>
+				<div class="flex-fourth">
 				</div>
 			</div>
 		</div>
-		<footer>
-			Copyright 2017 Legacy Autobody
-		</footer>
-	</div>
-</div>
-<script src="js/modal-window.js"></script>
+	</footer>
 </body>
 </html>
