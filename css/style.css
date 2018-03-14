@@ -1,7 +1,61 @@
-/* GENERAL */
+/* TABLE OF CONTENTS 
+ *
+ * GLOBAL............Globally available and shared variables.
+ *
+ * TYPOGRAPHY........font faces, weights, line heights, sizes, styles for headings and body text.
+ * 
+ * MODULES...........styles that manage page layouts and segments, including grids.
+ *
+ * COMPONENTS
+ * Forms.............styles for form controls and labels.
+ * Buttons...........styles for primary, secondary, etc. buttons.
+ * Icons.............styles for icons.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --black-color: #060709;
+  --red-color: #ed1b24;
+  --yellow-color: #ffcd2e;
+}
+
+.wrapper {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #000;
 }
 
 h1 {
@@ -17,13 +71,67 @@ h3 {
 
 }
 
-body {
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-	color: #000;
+p {
+
 }
 
-.nav-logo {
-	width: 280px;
-	height: 148px;
+a {
+
 }
+
+
+
+
+
+/*------------------------------------*\
+  #MODULES
+\*------------------------------------*/
+
+/* NAVIGATION */
+
+.nav-logo {
+  width: 280px;
+  height: 148px;
+}
+
+/* HEADER */
+
+/* ABOUT */
+
+.about {
+
+}
+
+/* SERVICES */
+
+.services {
+  background: var(--black-color);
+}
+
+/* LOCATIONS */
+
+.locations {
+
+}
+
+/* REVIEWS */
+
+.reviews {
+  background: var(--black-color);
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+/* FORMS */
+
+/* BUTTONS */
+
+/* ICONS */
