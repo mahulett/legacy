@@ -5,6 +5,7 @@
  * TYPOGRAPHY........font faces, weights, line heights, sizes, styles for headings and body text.
  * 
  * MODULES...........styles that manage page layouts and segments, including grids.
+ * 
  *
  * COMPONENTS
  * Forms.............styles for form controls and labels.
@@ -86,6 +87,29 @@ a {
 /*------------------------------------*\
   #MODULES
 \*------------------------------------*/
+
+/* FLEXBOX */
+
+.flex-horizontal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.flex-half, .flex-fourth {
+  flex: 1 0 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-half {
+    flex: 1 0 47%;
+    width: 47%;
+  }
+  .flex-fourth {
+    flex: 0 0 24%;
+    width: 24%;
+  }
+}
 
 /* NAVIGATION */
 
