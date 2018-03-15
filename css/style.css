@@ -39,12 +39,19 @@
 
 @media only screen and (min-width: 768px) {
   .wrapper {
-    max-width: 75em;
+    max-width: 1280px;
+    padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
+.section-break {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6vw;
+}
 
 
 
@@ -113,17 +120,51 @@ a {
 
 /* NAVIGATION */
 
+header {
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
 .nav-logo {
   width: 280px;
   height: 148px;
 }
 
+.nav-links {
+  list-style-type: none;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-links li {
+    display: inline-block;
+  }
+}
+
 /* HEADER */
+
+.homepage-header {
+  position: relative;
+  background: #9d9d9d;
+  padding-top: 180px;
+  padding-bottom: 60px;
+}
 
 /* ABOUT */
 
 .about {
-
+  position: relative;
 }
 
 /* SERVICES */
@@ -141,10 +182,16 @@ a {
 /* REVIEWS */
 
 .reviews {
+  position: relative;
   background: var(--black-color);
 }
 
+/* ESTIMATE */
 
+.estimate {
+  position: relative;
+  background: #cc0000;
+}
 
 
 
