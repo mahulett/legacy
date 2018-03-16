@@ -158,6 +158,10 @@ header {
   .nav-links li {
     display: inline-block;
   }
+
+  .nav-links a {
+    color: #fff;
+  }
 }
 
 /* HEADER */
