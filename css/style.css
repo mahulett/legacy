@@ -111,7 +111,8 @@ a {
   justify-content: space-between;
 }
 
-.flex-half, .flex-fourth {
+.flex-half,
+.flex-fourth {
   flex: 1 0 100%;
 }
 
