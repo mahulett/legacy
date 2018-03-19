@@ -122,9 +122,8 @@ a {
   text-decoration: none;
 }
 
-.button-primary {
-  background: var(--red-color);
-  color: #fff;
+.button-primary:hover {
+
 }
 
 .button-secondary {
@@ -132,9 +131,17 @@ a {
   color: var(--black-color);
 }
 
+.button-secondary:hover {
+
+}
+
 .button-tertiary {
   background: var(--black-color);
   color: #fff;
+}
+
+.button-tertiary:hover {
+
 }
 
 /* ICONS */
@@ -185,7 +192,7 @@ a {
 
 header {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
 }
 
