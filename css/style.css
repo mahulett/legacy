@@ -60,7 +60,7 @@
   #TYPOGRAPHY
 \*------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
@@ -112,18 +112,23 @@ a {
 }
 
 .flex-half,
+.flex-third,
 .flex-fourth {
   flex: 1 0 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .flex-half {
-    flex: 1 0 47%;
-    width: 47%;
+    flex: 1 0 48%;
+    width: 48%;
+  }
+  .flex-third {
+    flex: 1 0 30.66%;
+    width: 30.66%;
   }
   .flex-fourth {
-    flex: 0 0 24%;
-    width: 24%;
+    flex: 0 0 22%;
+    width: 22%;
   }
 }
 
@@ -151,6 +156,106 @@ header {
   margin-left: auto;
 }
 
+.nav-links li {
+  display: none;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.nav-icon {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  top: 2em;
+  right: 2em;
+}
+
+.nav-bar,
+.nav-bar:after,
+.nav-bar:before {
+  width: 30px;
+  height: 3px;
+}
+
+.nav-bar {
+  position: relative;
+  transform: translateY(10px);
+  background: rgba(255, 255, 255, 1);
+  transition: all 0ms 300ms;
+}
+  
+.nav-icon.nav-close .nav-bar {
+  background: rgba(255, 255, 255, 0); 
+}
+
+.nav-bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: rgba(255, 255, 255, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-icon.nav-close .nav-bar:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.nav-icon.nav-close .nav-bar:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.nav-icon.nav-close {
+  z-index: 3;
+}
+
+.nav-links.nav-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: var(--black-color);
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  animation-name: slideInDown;
+  animation-duration: 0.6s;
+}
+
+.nav-links.nav-open li {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid  #fff;
+  text-align: center;
+}
+
+.nav-links.nav-open li:nth-child(1) {
+  padding-top: 80px;
+}
+
 @media only screen and (min-width: 768px) {
   .nav-icon {
     display: none;
@@ -158,6 +263,12 @@ header {
 
   .nav-links li {
     display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+
+  .nav-links-focus {
+    border: 2px solid #fff;
   }
 
   .nav-links a {
@@ -170,8 +281,29 @@ header {
 .homepage-header {
   position: relative;
   background: #9d9d9d;
-  padding-top: 180px;
-  padding-bottom: 60px;
+  background: url(../img/homepage-header-estimate-mob.jpg) center center/cover;
+  padding: 180px 0 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .homepage-header {
+    background: url(../img/homepage-header-estimate.jpg) left bottom/cover;
+    padding-bottom: 180px;
+  }
+}
+
+.homepage-header-item {
+  margin-bottom: 100px;
+}
+
+.homepage-header-title {
+  color: var(--yellow-color);
+}
+
+.homepage-header-subtitle {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.414em;
 }
 
 /* ABOUT */
@@ -217,5 +349,32 @@ header {
 /* FORMS */
 
 /* BUTTONS */
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.414em;
+  padding: 8px 16px;
+  transition: all 0.5s ease-in;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-primary {
+  background: var(--red-color);
+  color: #fff;
+}
+
+.button-secondary {
+  background: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.button-tertiary {
+  background: var(--black-color);
+  color: #fff;
+}
 
 /* ICONS */
