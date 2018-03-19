@@ -333,6 +333,7 @@ header {
   padding-bottom: 50vh;
   height: 0;
   overflow: hidden;
+  margin-bottom: -50px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -343,7 +344,7 @@ header {
 
 .locations-map iframe {
 position: absolute;
-top: 0;
+top: -50px;
 left: 0;
 width: 100% !important;
 height: 100% !important;
