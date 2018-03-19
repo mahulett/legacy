@@ -259,9 +259,10 @@ header {
 
 .services-button{
   width: 60%;
+  font-size: .8em;
   opacity: 0;
   height: 0;
-  transition: height, opacity;
+  transition: height .1s ease-out, opacity .5s ease-out;
 }
 
 .services-item:hover .services-button{
