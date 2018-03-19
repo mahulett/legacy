@@ -29,6 +29,8 @@
 :root {
   --black-color: #060709;
   --red-color: #ed1b24;
+  --dark-orange-color: #f3582a;
+  --light-orange-color: #f8922d;
   --yellow-color: #ffcd2e;
 }
 
@@ -113,7 +115,8 @@ a {
 
 .flex-half,
 .flex-third,
-.flex-fourth {
+.flex-fourth,
+.flex-fourth-full {
   flex: 1 0 100%;
 }
 
@@ -129,6 +132,10 @@ a {
   .flex-fourth {
     flex: 0 0 22%;
     width: 22%;
+  }
+  .flex-fourth-full {
+    flex: 0 0 25%;
+    width: 25%;
   }
 }
 
@@ -322,6 +329,80 @@ header {
 
 .locations {
 
+}
+
+.locations-map {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50vh;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: -50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .locations-map {
+    padding-bottom: 25%;
+  }
+}
+
+.locations-map iframe {
+position: absolute;
+top: -50px;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+
+.locations-title {
+  text-align: center;
+}
+
+.locations-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.locations-item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.locations-item:nth-child(1) {
+  background: var(--yellow-color);
+}
+
+.locations-item:nth-child(2) {
+  background: var(--light-orange-color);
+}
+
+.locations-item:nth-child(3) {
+  background: var(--dark-orange-color);
+}
+
+.locations-item:nth-child(4) {
+  background: var(--red-color);
+}
+
+.locations-icon {
+  width: 60px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.locations-item-title {
+  margin: 0;
+}
+
+.locations-button {
+  margin-bottom: 20px;
 }
 
 /* REVIEWS */
