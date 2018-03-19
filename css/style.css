@@ -74,6 +74,7 @@ body {
 
 h1, h2 {
   font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -412,7 +413,34 @@ height: 100% !important;
 
 .estimate {
   position: relative;
-  background: #cc0000;
+  padding: 6vw 0 0;
+  color: #fff;
+  background: url(../img/homepage-estimate-background.jpg) center center/cover;
+}
+
+.estimate-break {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 6vw;
+}
+
+.estimate-title {
+  color: #fff;
+}
+
+.estimate-item {
+  z-index: 2;
+}
+
+.estimate-image {
+  width: 100%;
+}
+
+@media only screen and (min-width:768px) {
+  .estimate-title {
+    text-align: right;
+  }
 }
 
 
