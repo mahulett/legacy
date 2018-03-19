@@ -4,13 +4,13 @@
  *
  * TYPOGRAPHY........font faces, weights, line heights, sizes, styles for headings and body text.
  * 
- * MODULES...........styles that manage page layouts and segments, including grids.
- * 
- *
  * COMPONENTS
  * Forms.............styles for form controls and labels.
  * Buttons...........styles for primary, secondary, etc. buttons.
  * Icons.............styles for icons.
+ *
+ * MODULES...........styles that manage page layouts and segments, including grids.
+ * 
  *
  */
 
@@ -97,6 +97,47 @@ p {
 a {
 
 }
+
+
+
+
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+/* FORMS */
+
+/* BUTTONS */
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.414em;
+  padding: 8px 16px;
+  transition: all 0.5s ease-in;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-primary {
+  background: var(--red-color);
+  color: #fff;
+}
+
+.button-secondary {
+  background: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.button-tertiary {
+  background: var(--black-color);
+  color: #fff;
+}
+
+/* ICONS */
 
 
 
@@ -533,40 +574,3 @@ height: 100% !important;
 
 
 
-
-/*------------------------------------*\
-  #COMPONENTS
-\*------------------------------------*/
-
-/* FORMS */
-
-/* BUTTONS */
-
-.button {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 1.414em;
-  padding: 8px 16px;
-  transition: all 0.5s ease-in;
-}
-
-.button:hover {
-  text-decoration: none;
-}
-
-.button-primary {
-  background: var(--red-color);
-  color: #fff;
-}
-
-.button-secondary {
-  background: var(--yellow-color);
-  color: var(--black-color);
-}
-
-.button-tertiary {
-  background: var(--black-color);
-  color: #fff;
-}
-
-/* ICONS */
