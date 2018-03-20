@@ -29,6 +29,7 @@
 :root {
   --black-color: #060709;
   --red-color: #ed1b24;
+  --dark-red-color: #A51218;
   --dark-orange-color: #f3582a;
   --light-orange-color: #f8922d;
   --yellow-color: #ffcd2e;
@@ -58,12 +59,12 @@
 .content-header {
   position: relative;
   background: #9d9d9d;
-  padding: 180px 0 40px;
+  padding: 100px 0 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .content-header {
-    padding-bottom: 180px;
+    padding-bottom: 60px;
   }
 }
 
@@ -72,8 +73,14 @@
 }
 
 .content-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.content-callout {
+  font-size: 1.414em;
+  color: var(--dark-red-color);
+  margin-bottom: 1em;
 }
 
 
