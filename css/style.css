@@ -4,13 +4,13 @@
  *
  * TYPOGRAPHY........font faces, weights, line heights, sizes, styles for headings and body text.
  * 
- * MODULES...........styles that manage page layouts and segments, including grids.
- * 
- *
  * COMPONENTS
  * Forms.............styles for form controls and labels.
  * Buttons...........styles for primary, secondary, etc. buttons.
  * Icons.............styles for icons.
+ *
+ * MODULES...........styles that manage page layouts and segments, including grids.
+ * 
  *
  */
 
@@ -74,6 +74,7 @@ body {
 
 h1, h2 {
   font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -96,6 +97,47 @@ p {
 a {
 
 }
+
+
+
+
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+/* FORMS */
+
+/* BUTTONS */
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.414em;
+  padding: 8px 16px;
+  transition: all 0.5s ease-in;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-primary {
+  background: var(--red-color);
+  color: #fff;
+}
+
+.button-secondary {
+  background: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.button-tertiary {
+  background: var(--black-color);
+  color: #fff;
+}
+
+/* ICONS */
 
 
 
@@ -500,46 +542,36 @@ height: 100% !important;
 
 .estimate {
   position: relative;
-  background: #cc0000;
+  padding: 6vw 0 0;
+  color: #fff;
+  background: url(../img/homepage-estimate-background.jpg) center center/cover;
 }
 
-
-
-
-
-/*------------------------------------*\
-  #COMPONENTS
-\*------------------------------------*/
-
-/* FORMS */
-
-/* BUTTONS */
-
-.button {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 1.414em;
-  padding: 8px 16px;
-  transition: all 0.5s ease-in;
+.estimate-break {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 6vw;
 }
 
-.button:hover {
-  text-decoration: none;
-}
-
-.button-primary {
-  background: var(--red-color);
+.estimate-title {
   color: #fff;
 }
 
-.button-secondary {
-  background: var(--yellow-color);
-  color: var(--black-color);
+.estimate-item {
+  z-index: 2;
 }
 
-.button-tertiary {
-  background: var(--black-color);
-  color: #fff;
+.estimate-image {
+  width: 100%;
 }
 
-/* ICONS */
+@media only screen and (min-width:768px) {
+  .estimate-title {
+    text-align: right;
+  }
+}
+
+
+
+
