@@ -362,8 +362,31 @@ header {
   min-height: 425px;
 }
 
-.about h2 {
+.about-title {
   text-align: center;
+  position: relative;
+}
+
+.about-title:before {
+  position: absolute;
+  top: 0.83em;
+  left: 19%;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 25%;
+  background-color: #B5B5B5;
+}
+
+.about-title:after {
+  position: absolute;
+  top: 0.83em;
+  left: 56%;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 25%;
+  background-color: #B5B5B5;
 }
 
 .about-us-photo {
