@@ -55,7 +55,26 @@
   height: 6vw;
 }
 
+.content-header {
+  position: relative;
+  background: #9d9d9d;
+  padding: 180px 0 40px;
+}
 
+@media only screen and (min-width: 768px) {
+  .content-header {
+    padding-bottom: 180px;
+  }
+}
+
+.content-header-title {
+  color: #fff;
+}
+
+.content-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 
 
 /*------------------------------------*\
@@ -162,13 +181,17 @@ a {
   flex: 1 0 100%;
 }
 
+.flex-image {
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .flex-half {
-    flex: 1 0 48%;
+    flex: 0 0 48%;
     width: 48%;
   }
   .flex-third {
-    flex: 1 0 30.66%;
+    flex: 0 0 30.66%;
     width: 30.66%;
   }
   .flex-fourth {
@@ -325,7 +348,7 @@ header {
   }
 }
 
-/* HEADER */
+/* HOMEPAGE: HEADER */
 
 .homepage-header {
   position: relative;
@@ -355,13 +378,13 @@ header {
   font-size: 1.414em;
 }
 
-/* ABOUT */
+/* HOMEPAGE: ABOUT */
 
 .about {
   position: relative;
 }
 
-/* SERVICES */
+/* HOMEPAGE: SERVICES */
 
 .services {
   background: var(--black-color);
@@ -451,7 +474,7 @@ header {
   opacity: 1;
 }
 
-/* LOCATIONS */
+/* HOMEPAGE: LOCATIONS */
 
 .locations {
 }
@@ -530,14 +553,14 @@ height: 100% !important;
   margin-bottom: 20px;
 }
 
-/* REVIEWS */
+/* HOMEPAGE: REVIEWS */
 
 .reviews {
   position: relative;
   background: var(--black-color);
 }
 
-/* ESTIMATE */
+/* HOMEPAGE: ESTIMATE */
 
 .estimate {
   position: relative;
@@ -557,20 +580,47 @@ height: 100% !important;
   color: #fff;
 }
 
-.estimate-item {
-  z-index: 2;
-}
-
-.estimate-image {
-  width: 100%;
-}
-
 @media only screen and (min-width:768px) {
   .estimate-title {
     text-align: right;
   }
 }
 
+.estimate-item {
+  z-index: 2;
+}
 
+/* ABOUT US: SERVICES */
 
+.about-header {
+  background: url(../img/homepage-header-estimate-mob.jpg) center center/cover;
+}
 
+@media only screen and (min-width: 768px) {
+  .about-header {
+    background: url(../img/homepage-header-estimate.jpg) left bottom/cover;
+  }
+}
+
+.about-service-item {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-service-item:nth-child(1) { order: 1; }
+  .about-service-item:nth-child(2) { order: 0; }
+  .about-service-item:nth-child(3) { order: 2; }
+  .about-service-item:nth-child(4) { order: 3; }
+  .about-service-item:nth-child(5) { order: 5; }
+  .about-service-item:nth-child(6) { order: 4; }
+  .about-service-item:nth-child(7) { order: 6; }
+  .about-service-item:nth-child(8) { order: 7; }
+  .about-service-item:nth-child(9) { order: 9; }
+  .about-service-item:nth-child(10) { order: 8; }
+  .about-service-item:nth-child(11) { order: 10; }
+  .about-service-item:nth-child(12) { order: 11; }
+  .about-service-item:nth-child(13) { order: 13; }
+  .about-service-item:nth-child(14) { order: 12; }
+  .about-service-item:nth-child(15) { order: 14; }
+  .about-service-item:nth-child(16) { order: 15; }
+}
