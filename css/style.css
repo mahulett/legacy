@@ -367,19 +367,29 @@ header {
   background: var(--black-color);
 }
 
-.services h2{
-  text-align: right;
+.services-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.services h2,
+.services h3 {
   color: #fff;
 }
 
-.services-list{
+.services h2 {
+  align-self: flex-end;
+}
+
+.services-list {
 	margin: 0;
 	padding: 0;
 }
 
-.services-item{
+.services-item {
 	margin-top: 20px;
-	padding: 20px 40px;
+	padding: 20px 20px;
 	height: 190px;
 	display: flex;
 	flex-flow: column nowrap;
@@ -390,6 +400,12 @@ header {
 	text-transform: uppercase;
 	font-size: .9em;
   position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-item {
+    flex-basis: 24%;
+  }
 }
 
 .services-item:nth-of-type(1) {
@@ -424,7 +440,7 @@ header {
 	background: url(../img/car-rental.jpg) no-repeat center center/cover;
 }
 
-.services-overlay{
+.services-overlay {
 	position: absolute;
 	top: 0;
   right: 0;
@@ -434,21 +450,43 @@ header {
 }
 
 .services-item h3,
-.services-item a{
+.services-item a {
   z-index: 1;
 }
 
-.services-button{
-  width: 60%;
+.services-button {
+  width: 70%;
+  font-size: .9em;
   opacity: 0;
   height: 0;
-  transition: height, opacity;
+  padding: 0;
+  transition: padding 0.5s, height 0.5s, opacity 0.5s;
 }
 
-.services-item:hover .services-button{
+.services-item:hover .services-button {
   height: auto;
-  padding: 5px;
   opacity: 1;
+  padding: 8px 5px;
+}
+
+.services-certifications {
+  background: #fff;
+  padding: 5px 5px;
+}
+
+.certifications-icon {
+  height: 75px;
+  padding: 5px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .certifications-icon {
+    height: 100px;
+  }
+}
+
+.certifications-button{
+  margin: 40px 0;
 }
 
 /* LOCATIONS */
