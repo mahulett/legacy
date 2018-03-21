@@ -4,6 +4,8 @@
  *
  * TYPOGRAPHY........font faces, weights, line heights, sizes, styles for headings and body text.
  * 
+ * HELPER............Helper classes
+ *
  * COMPONENTS
  * Forms.............styles for form controls and labels.
  * Buttons...........styles for primary, secondary, etc. buttons.
@@ -33,6 +35,7 @@
   --dark-orange-color: #f3582a;
   --light-orange-color: #f8922d;
   --yellow-color: #ffcd2e;
+  --light-gray-color: #c5c5c5;
 }
 
 .wrapper {
@@ -88,9 +91,6 @@
   #TYPOGRAPHY
 \*------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -110,6 +110,8 @@ h1 {
 
 h2 {
   font-size: 1.999em;
+  margin-top: 1.414em;
+  margin-bottom: 1.414em;
 }
 
 h3 {
@@ -126,6 +128,19 @@ a {
 
 
 
+
+
+/*------------------------------------*\
+  #HELPER
+\*------------------------------------*/
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
 
 
 /*------------------------------------*\
@@ -410,8 +425,8 @@ header {
   height: 65px;
   display: inline-block;
   -moz-box-shadow: 0px 1px 3px 0px #000;
-	-webkit-box-shadow: 0px 1px 3px 0px #000;
-	box-shadow: 0px 1px 3px 0px #000;
+  -webkit-box-shadow: 0px 1px 3px 0px #000;
+  box-shadow: 0px 1px 3px 0px #000;
   margin: 0;
 }
 
@@ -465,22 +480,22 @@ header {
 }
 
 .services-list {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .services-item {
-	margin-top: 20px;
-	padding: 20px 20px;
-	height: 190px;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: .9em;
+  margin-top: 20px;
+  padding: 20px 20px;
+  height: 190px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .9em;
   position: relative;
 }
 
@@ -491,44 +506,44 @@ header {
 }
 
 .services-item:nth-of-type(1) {
-	background: url(../img/estimates.jpg) no-repeat center center/cover;
+  background: url(../img/estimates.jpg) no-repeat center center/cover;
 }
 
 .services-item:nth-of-type(2) {
-	background: url(../img/collision-repair.jpg) no-repeat center center/cover;
+  background: url(../img/collision-repair.jpg) no-repeat center center/cover;
 }
 
 .services-item:nth-of-type(3) {
-	background: url(../img/insurance-claims.jpg) no-repeat center center/cover;
+  background: url(../img/insurance-claims.jpg) no-repeat center center/cover;
 }
 
 .services-item:nth-of-type(4) {
-	background: url(../img/dent-repair.jpg) no-repeat center center/cover;
+  background: url(../img/dent-repair.jpg) no-repeat center center/cover;
 }
 
 .services-item:nth-of-type(5) {
-	background: url(../img/mechanical.jpg) no-repeat center center/cover;
+  background: url(../img/mechanical.jpg) no-repeat center center/cover;
 }
 
 .services-item:nth-of-type(6) {
-	background: url(../img/lifetime-warranty.jpg) no-repeat center center/cover;
+  background: url(../img/lifetime-warranty.jpg) no-repeat center center/cover;
 }
 
 .services-item:nth-of-type(7) {
-	background: url(../img/towing.jpg) no-repeat center center/cover;
+  background: url(../img/towing.jpg) no-repeat center center/cover;
 }
 
 .services-item:nth-of-type(8) {
-	background: url(../img/car-rental.jpg) no-repeat center center/cover;
+  background: url(../img/car-rental.jpg) no-repeat center center/cover;
 }
 
 .services-overlay {
-	position: absolute;
-	top: 0;
+  position: absolute;
+  top: 0;
   right: 0;
   left: 0;
- 	bottom: 0;
-	background: rgba(0,0,0,0.4);
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
 }
 
 .services-item h3,
@@ -655,6 +670,42 @@ height: 100% !important;
 .reviews {
   position: relative;
   background: var(--black-color);
+  padding: 1em 0;
+}
+
+.reviews-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.reviews-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.reviews-title {
+  color: #fff;
+  margin-bottom: 1.5em;
+  align-self: flex-start;
+}
+
+.reviews-item {
+  display: block;
+  background: #fff;
+  position: relative;
+  border: 1px solid var(--light-gray-color);
+  margin-bottom: 40px;
+  padding: 1em;
+}
+
+.reviews-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: 10px;
 }
 
 /* HOMEPAGE: ESTIMATE */
