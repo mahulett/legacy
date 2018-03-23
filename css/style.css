@@ -145,7 +145,7 @@ a {
   margin-bottom: 2em;
 }
 
-.content-callout-secondary:last-child {
+.content-callout-secondary:last-of-type {
   padding-bottom: 40px;
 }
 
