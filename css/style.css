@@ -279,8 +279,15 @@ header {
 }
 
 .nav-logo {
-  width: 280px;
-  height: 148px;
+  width: 140px;
+  height: 74px;
+}
+
+@media only screen and (min-width:768px) {
+  .nav-logo {
+    width: 280px;
+    height: 148px;
+  }
 }
 
 .nav-links {
