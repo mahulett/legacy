@@ -159,51 +159,6 @@ a {
 }
 
 
-/*------------------------------------*\
-  #TYPOGRAPHY
-\*------------------------------------*/
-
-body {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  color: var(--black-color);
-}
-
-h1, h2 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 2.827em;
-}
-
-
-h2 {
-  font-size: 1.999em;
-  margin-top: 1.414em;
-  margin-bottom: 1.414em;
-}
-
-h3 {
-  font-size: 1.414em;
-}
-
-h4 {
-  font-size: 1.25em;
-  margin-top: .85em;
-  margin-bottom: .85em;
-}
-
-p {
-
-}
-
-a {
-
-}
-
 
 
 
@@ -959,6 +914,7 @@ height: 100% !important;
 }
 
 /* CERTIFICATIONS */
+
 .cert-flex-group {
   display: flex;
   flex-flow: column wrap;
