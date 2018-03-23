@@ -137,6 +137,12 @@ h3 {
   font-size: 1.414em;
 }
 
+h4 {
+  font-size: 1.25em;
+  margin-top: .85em;
+  margin-bottom: .85em;
+}
+
 p {
 
 }
@@ -870,5 +876,31 @@ height: 100% !important;
 
 .contact-card {
   box-shadow: 0px 0px 20px 0px rgba(197,197,197,0.8);
+  padding: 20px;
+}
+
+/* CERTIFICATIONS */
+.cert-flex-group {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 80px;
+  flex: 0 1 auto;
+}
+
+.cert-button {
+  font-size: 1.2em;
+}
+
+.cert-img-box {
+  border: 1px solid #ddd;
+  width: 250px;
+  height: 250px;
+  display: flex;
+}
+
+.cert-img {
+  width: 100%;
+  align-self: center;
   padding: 20px;
 }
