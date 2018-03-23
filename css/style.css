@@ -837,3 +837,15 @@ height: 100% !important;
   font-weight: bold;
   margin-top: 1.999em;
 }
+
+/* CONTACT */
+
+.contact-form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.contact-card {
+  box-shadow: 0px 0px 20px 0px rgba(197,197,197,0.8);
+  padding: 20px;
+}
