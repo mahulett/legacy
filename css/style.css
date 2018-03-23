@@ -80,10 +80,28 @@
   padding-bottom: 40px;
 }
 
+.content-section-dark {
+  background: var(--black-color);
+  color: #fff;
+}
+
 .content-callout {
   font-size: 1.414em;
   color: var(--dark-red-color);
   margin-bottom: 2em;
+}
+
+.content-callout-secondary:last-child {
+  padding-bottom: 40px;
+}
+
+.content-section-title {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.content-section-half {
+  margin-bottom: 60px;
 }
 
 
@@ -761,7 +779,7 @@ height: 100% !important;
   z-index: 2;
 }
 
-/* ABOUT US: SERVICES */
+/* ABOUT US */
 
 .about-header {
   background: url(../img/homepage-header-estimate-mob.jpg) center center/cover;
@@ -773,22 +791,8 @@ height: 100% !important;
   }
 }
 
-.about-headshots {
-  padding-top: 40px;
-}
-
 .about-headshot {
   padding-bottom: 40px;
-}
-
-.about-services {
-  background: var(--black-color);
-  color: #fff;
-}
-
-.about-services-title {
-  margin-top: 1em;
-  margin-bottom: 2em;
 }
 
 .about-services-subtitle {
@@ -826,4 +830,10 @@ height: 100% !important;
   .about-service-item:nth-child(14) { order: 12; }
   .about-service-item:nth-child(15) { order: 14; }
   .about-service-item:nth-child(16) { order: 15; }
+}
+
+/* LOCATIONS */
+
+.location-section {
+  padding-bottom: 0;
 }
