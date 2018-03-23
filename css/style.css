@@ -76,14 +76,13 @@
 }
 
 .content-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
 }
 
 .content-callout {
   font-size: 1.414em;
   color: var(--dark-red-color);
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 
@@ -748,6 +747,10 @@ height: 100% !important;
   .about-header {
     background: url(../img/homepage-header-estimate.jpg) left bottom/cover;
   }
+}
+
+.about-headshots {
+  padding-top: 40px;
 }
 
 .about-service-item {
