@@ -31,11 +31,12 @@
 :root {
   --black-color: #060709;
   --red-color: #ed1b24;
-  --dark-red-color: #A51218;
+  --dark-red-color: #d00000;
   --dark-orange-color: #f3582a;
   --light-orange-color: #f8922d;
   --yellow-color: #ffcd2e;
   --light-gray-color: #c5c5c5;
+  --dark-gray-color: #616161;
 }
 
 .wrapper {
@@ -113,7 +114,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.4;
-  color: #000;
+  color: var(--black-color);
 }
 
 h1, h2 {
@@ -216,6 +217,7 @@ a {
 
 .flex-half,
 .flex-third,
+.flex-two-thirds,
 .flex-fourth,
 .flex-fourth-full {
   flex: 1 0 100%;
@@ -233,6 +235,10 @@ a {
   .flex-third {
     flex: 0 0 30.66%;
     width: 30.66%;
+  }
+  .flex-two-thirds {
+    flex: 0 0 65.33%;
+    width: 65.33%;
   }
   .flex-fourth {
     flex: 0 0 22%;
@@ -836,4 +842,21 @@ height: 100% !important;
 
 .location-section {
   padding-bottom: 0;
+}
+
+/* FAQ */
+
+.faq-list {
+  margin-top: 0;
+  color: var(--dark-gray-color);
+  margin-bottom: 1.999em;
+}
+
+.faq-list a {
+  color: var(--dark-gray-color);
+}
+
+.faq-question {
+  font-weight: bold;
+  margin-top: 1.999em;
 }
