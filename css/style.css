@@ -37,7 +37,7 @@
   --dark-orange-color: #f3582a;
   --light-orange-color: #f8922d;
   --yellow-color: #ffcd2e;
-  --light-gray-color: #c5c5c5;
+  --light-gray-color: #B5B6B8;
   --dark-gray-color: #616161;
 }
 
@@ -65,7 +65,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
   color: var(--black-color);
 }
@@ -95,7 +95,13 @@ p {
 }
 
 a {
+  color: var(--dark-red-color);
+  text-decoration: none;
+}
 
+a:hover {
+  color: var(--red-color);
+  text-decoration: none;
 }
 
 
@@ -276,6 +282,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 1em;
+  font-size: 0.707em;
 }
 
 .nav-logo {
@@ -413,6 +420,28 @@ header {
   .nav-links a {
     color: #fff;
   }
+}
+
+/* NAVIGATION */
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: var(--light-gray-color);
+}
+
+footer p {
+  font-size: 0.707em;
+}
+
+.footer-logo {
+  width: 100px;
+  padding-bottom: 20px;
+}
+
+.footer-title {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* HOMEPAGE: HEADER */
@@ -676,7 +705,7 @@ header {
 
 @media only screen and (min-width: 768px) {
   .locations-map {
-    padding-bottom: 25%;
+    padding-bottom: 40%;
   }
 }
 
