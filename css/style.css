@@ -122,12 +122,12 @@ a:hover {
 .content-header {
   position: relative;
   background: #9d9d9d;
-  padding: 100px 0 40px;
+  padding: 120px 0 60px;
 }
 
 @media only screen and (min-width: 768px) {
   .content-header {
-    padding-bottom: 60px;
+    padding-bottom: 100px;
   }
 }
 
@@ -454,7 +454,7 @@ footer p {
   text-transform: uppercase;
 }
 
-/* HOMEPAGE: HEADER */
+/* HEADER */
 
 .homepage-header {
   position: relative;
@@ -896,6 +896,18 @@ height: 100% !important;
 
 /* LOCATIONS */
 
+.locations-header {
+  position: relative;
+  background: #9d9d9d;
+  background: url(../img/contact-header.jpg) center top/cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .locations-header {
+    background: url(../img/contact-header.jpg) center center/cover;
+  }
+}
+
 .location-section {
   padding-bottom: 0;
 }
@@ -919,6 +931,18 @@ height: 100% !important;
 
 /* CONTACT */
 
+.contact-header {
+  position: relative;
+  background: #9d9d9d;
+  background: url(../img/contact-header.jpg) center top/cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-header {
+    background: url(../img/contact-header.jpg) center center/cover;
+  }
+}
+
 .contact-form {
   display: flex;
   flex-flow: column nowrap;
@@ -930,14 +954,32 @@ height: 100% !important;
 
 .contact-form-field {
   padding: 8px 16px;
+  background: var(--light-gray-color);
+  border: 0;
+}
+
+.contact-form-submit {
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .contact-card {
-  box-shadow: 0px 0px 20px 0px rgba(197,197,197,0.8);
+  background: var(--light-gray-color);
   padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.contact-card-location {
+  padding-left: 40px;
+  position: relative;
 }
 
 .contact-icon {
+  position: absolute;
+  top: 5px;
+  left: 0;
   width: 30px;
   height: 30px;
 }
@@ -949,6 +991,18 @@ height: 100% !important;
 }
 
 /* CERTIFICATIONS */
+
+.certifications-header {
+  position: relative;
+  background: #9d9d9d;
+  background: url(../img/certifications-header.jpg) center top/cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .certifications-header {
+    background: url(../img/certifications-header.jpg) center center/cover;
+  }
+}
 
 .cert-flex-group {
   display: flex;
@@ -973,3 +1027,18 @@ height: 100% !important;
   width: 100%;
   align-self: center;
   padding: 20px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials-header {
+  position: relative;
+  background: #9d9d9d;
+  background: url(../img/testimonials-header.jpg) center top/cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonials-header {
+    background: url(../img/testimonials-header.jpg) center top/cover;
+  }
+}
