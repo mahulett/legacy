@@ -119,6 +119,81 @@ a:hover {
   height: 6vw;
 }
 
+.section-title {
+  text-align: center;
+  position: relative;
+}
+
+.section-title:before {
+  position: absolute;
+  top: 0.83em;
+  left: 10%;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 25%;
+  background-color: #B5B5B5;
+}
+
+.section-title:after {
+  position: absolute;
+  top: 0.83em;
+  left: 65%;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 25%;
+  background-color: #B5B5B5;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title:before {
+    position: absolute;
+    top: 0.83em;
+    left: 15%;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25%;
+    background-color: #B5B5B5;
+  }
+
+  .section-title:after {
+    position: absolute;
+    top: 0.83em;
+    left: 60%;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25%;
+    background-color: #B5B5B5;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title:before {
+    position: absolute;
+    top: 0.83em;
+    left: 17%;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25%;
+    background-color: #B5B5B5;
+  }
+
+.section-title:after {
+    position: absolute;
+    top: 0.83em;
+    left: 58%;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25%;
+    background-color: #B5B5B5;
+  }
+}
+
 .content-header {
   position: relative;
   background: #9d9d9d;
@@ -274,6 +349,11 @@ a:hover {
   flex: 1 0 100%;
 }
 
+.flex-half-mob {
+  flex: 0 0 48%;
+  width: 48%;
+}
+
 .flex-image {
   width: 100%;
 }
@@ -322,10 +402,17 @@ header {
 
 .nav-logo {
   width: 140px;
-  height: 74px;
+  height: 107px;
 }
 
 @media only screen and (min-width:768px) {
+  .nav-logo {
+    width: 200px;
+    height: 148px;
+  }
+}
+
+@media only screen and (min-width:1200px) {
   .nav-logo {
     width: 280px;
     height: 148px;
@@ -522,34 +609,8 @@ footer p {
 }
 
 .about-title {
-  text-align: center;
-  position: relative;
   margin-bottom: 0;
 }
-
-.about-title:before {
-  position: absolute;
-  top: 0.83em;
-  left: 10%;
-  content: '';
-  display: block;
-  height: 2px;
-  width: 25%;
-  background-color: #B5B5B5;
-}
-
-.about-title:after {
-  position: absolute;
-  top: 0.83em;
-  left: 65%;
-  content: '';
-  display: block;
-  height: 2px;
-  width: 25%;
-  background-color: #B5B5B5;
-}
-
-
 
 .about-img {
   flex: 1 0 100%;
@@ -568,32 +629,7 @@ footer p {
   margin: 0 0 40px 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .about-title:before {
-    position: absolute;
-    top: 0.83em;
-    left: 15%;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 25%;
-    background-color: #B5B5B5;
-  }
-
-  .about-title:after {
-    position: absolute;
-    top: 0.83em;
-    left: 60%;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 25%;
-    background-color: #B5B5B5;
-  }
-}
-
 @media only screen and (min-width: 992px) {
-  
   .about-title {
     margin: 1em 0;
   }
@@ -617,30 +653,7 @@ footer p {
     flex: 0 0 48%;
     width: 48%;
     margin: 0 0 85px 20px;
-  }
-  
-  .about-title:before {
-    position: absolute;
-    top: 0.83em;
-    left: 17%;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 25%;
-    background-color: #B5B5B5;
-  }
-
-.about-title:after {
-    position: absolute;
-    top: 0.83em;
-    left: 58%;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 25%;
-    background-color: #B5B5B5;
-  }
-  
+  } 
 }
 
 .about-logos {
@@ -656,42 +669,38 @@ footer p {
   margin-left: 10px;
 }
 
-
-
-.about-us-break {
-  z-index: -1;
-}
-
 @media only screen and (min-width: 768px) {
   .about-logos {
     margin-bottom: 10px;
   }
 }
 
+.about-us-break {
+  z-index: -1;
+}
+
 /* HOMEPAGE: SERVICES */
 
 .services {
   background: var(--black-color);
+  color: #fff;
 }
 
 .services-section {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-bottom: 40px;
 }
 
-.services h2,
-.services h3 {
-  color: #fff;
-}
-
-.services h2 {
-  margin-bottom: 10px;
-}
-
-.services h2 {
+.services-title {
   margin-top: 0;
+  margin-bottom: 1em;
   align-self: flex-end;
+}
+
+.services-subtitle {
+  margin-top: 2em;
 }
 
 .services-list {
@@ -710,10 +719,13 @@ footer p {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  font-size: .9em;
   position: relative;
 }
 
+.services-item-title {
+  margin: 0;
+  font-size: 1em;
+}
 
 .services-item:nth-of-type(1) {
   background: url(../img/estimates.jpg) no-repeat center center/cover;
@@ -767,12 +779,13 @@ footer p {
   opacity: 0;
   height: 0;
   padding: 0;
-  transition: padding 0.5s, height 0.5s, opacity 0.5s;
+  transition: padding 0.5s, height 0.5s, opacity 0.5s, margin 0.5s;
 }
 
 .services-item:hover .services-button {
   height: auto;
   opacity: 1;
+  margin-top: 1em;
   padding: 8px 5px;
 }
 
@@ -786,9 +799,9 @@ footer p {
   padding: 5px 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .certifications-icon {
-    height: 100px;
+    height: 90px;
   }
 }
 
