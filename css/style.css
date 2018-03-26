@@ -519,9 +519,15 @@ footer p {
 }
 
 .about-us-photo {
-  height: 425px;
+  height: 395px;
   margin: 0 0 20px;
-  background: url(../img/owners.jpg) no-repeat center center/cover;
+  position: relative;
+}
+
+.about-us-team{
+  position: absolute:
+    top: 0px;
+  height: 425px;
 }
 
 .about-img {
@@ -1027,6 +1033,11 @@ height: 100% !important;
   width: 100%;
   align-self: center;
   padding: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .cert-flex-group {
+    flex: 0 1 50%;
 }
 
 /* TESTIMONIALS */
