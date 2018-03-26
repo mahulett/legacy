@@ -187,6 +187,26 @@ a:hover {
 
 /* FORMS */
 
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form-margin {
+  margin-top: 20px;
+}
+
+.form-field {
+  padding: 8px 16px;
+  background: var(--light-gray-color);
+  border: 0;
+}
+
+.form-submit {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
 /* BUTTONS */
 
 .button {
@@ -890,6 +910,14 @@ height: 100% !important;
   padding: 1em;
 }
 
+.reviews-item p {
+  font-size: 0.9em;
+}
+
+.reviews-item p:last-of-type {
+  margin-bottom: 0;
+}
+
 .reviews-icon {
   position: absolute;
   width: 40px;
@@ -1050,26 +1078,6 @@ height: 100% !important;
   }
 }
 
-.contact-form {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.contact-form-margin {
-  margin-top: 20px;
-}
-
-.contact-form-field {
-  padding: 8px 16px;
-  background: var(--light-gray-color);
-  border: 0;
-}
-
-.contact-form-submit {
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-
 .contact-card {
   background: var(--light-gray-color);
   padding: 20px;
@@ -1139,6 +1147,7 @@ height: 100% !important;
 @media only screen and (max-width: 992px) {
   .cert-flex-group {
     flex: 0 1 50%;
+  }
 }
 
 /* TESTIMONIALS */
