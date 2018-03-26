@@ -480,9 +480,15 @@ header {
 }
 
 .about-us-photo {
-  height: 425px;
+  height: 395px;
   margin: 0 0 20px;
-  background: url(../img/owners.jpg) no-repeat center center/cover;
+  position: relative;
+}
+
+.about-us-team{
+  position: absolute:
+    top: 0px;
+  height: 425px;
 }
 
 .about-img {
