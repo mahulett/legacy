@@ -239,6 +239,7 @@ a:hover {
 .flex-third,
 .flex-two-thirds,
 .flex-fourth,
+.flex-three-fourths,
 .flex-fourth-full {
   flex: 1 0 100%;
 }
@@ -263,6 +264,10 @@ a:hover {
   .flex-fourth {
     flex: 0 0 22%;
     width: 22%;
+  }
+  .flex-three-fourths {
+    flex: 0 0 74%;
+    width: 74%;
   }
   .flex-fourth-full {
     flex: 0 0 25%;
@@ -860,43 +865,39 @@ height: 100% !important;
 
 .about-headshot {
   padding-bottom: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
-.about-services-subtitle {
-  margin-top: 0;
+.about-headshot-title {
+  margin-top: -22px;
   background: var(--yellow-color);
-  padding: 5px;
-  color: var(--black-color);
+  padding: 8px 16px;
 }
 
-.about-service-item:nth-child(odd) {
-  margin-bottom: 40px;
-}
-
-.about-service-item:nth-child(even) {
+.about-service-item {
   margin-bottom: 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .about-service-item:nth-child(odd) {
-    margin-bottom: 60px;
-  }
-  .about-service-item:nth-child(1) { order: 1; }
-  .about-service-item:nth-child(2) { order: 0; }
-  .about-service-item:nth-child(3) { order: 2; }
-  .about-service-item:nth-child(4) { order: 3; }
-  .about-service-item:nth-child(5) { order: 5; }
-  .about-service-item:nth-child(6) { order: 4; }
-  .about-service-item:nth-child(7) { order: 6; }
-  .about-service-item:nth-child(8) { order: 7; }
-  .about-service-item:nth-child(9) { order: 9; }
-  .about-service-item:nth-child(10) { order: 8; }
-  .about-service-item:nth-child(11) { order: 10; }
-  .about-service-item:nth-child(12) { order: 11; }
-  .about-service-item:nth-child(13) { order: 13; }
-  .about-service-item:nth-child(14) { order: 12; }
-  .about-service-item:nth-child(15) { order: 14; }
-  .about-service-item:nth-child(16) { order: 15; }
+.about-service-picture {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0 15%;
+}
+
+.about-service-subtitle {
+  margin-top: -22px;
+  background: var(--red-color);
+  padding: 8px 16px;
+}
+
+.about-service-item p {
+  margin-top: 0.5em;
 }
 
 /* LOCATIONS */
