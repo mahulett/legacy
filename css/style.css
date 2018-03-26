@@ -207,8 +207,18 @@ a:hover {
   color: #fff;
 }
 
+.button-primary:hover {
+  background: var(--dark-red-color);
+  color: #fff;
+}
+
 .button-secondary {
   background: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.button-secondary:hover {
+  background: var(--light-orange-color);
   color: var(--black-color);
 }
 
@@ -902,20 +912,25 @@ height: 100% !important;
 
 /* LOCATIONS */
 
-.locations-header {
+.location-header {
   position: relative;
   background: #9d9d9d;
-  background: url(../img/contact-header.jpg) center top/cover;
+  background: url(../img/location-header.jpg) center top/cover;
 }
 
 @media only screen and (min-width: 768px) {
-  .locations-header {
-    background: url(../img/contact-header.jpg) center center/cover;
+  .location-header {
+    background: url(../img/location-header.jpg) center center/cover;
   }
 }
 
 .location-section {
   padding-bottom: 0;
+}
+
+.button-location {
+  margin-top: 20px;
+  font-size: 0.9em;
 }
 
 /* FAQ */
