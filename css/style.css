@@ -82,9 +82,9 @@ h1 {
 
 
 h2 {
-  font-size: 1.414em;
-  margin-top: 1.414em;
-  margin-bottom: 1.414em;
+  font-size: 1.999em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h3 {
@@ -101,15 +101,9 @@ h3 {
   }
 
   h2 {
-    font-size: 1.999em;
     margin-top: 1.414em;
     margin-bottom: 1.414em;
   }
-
-  h3 {
-  font-size: 1.414em;
-  }
-
 }
 
 p {
@@ -137,10 +131,17 @@ a:hover {
 \*------------------------------------*/
 
 .section-break {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 6vw;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-break {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6vw;
+  }
 }
 
 .section-title {
@@ -295,6 +296,7 @@ a:hover {
   border: 0;
   font-size: 1.414em;
   padding: 8px 16px;
+  margin: 20px 0;
   transition: all 0.5s ease-in;
 }
 
@@ -417,7 +419,7 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 1em;
+  margin-top: 2em;
   font-size: 0.707em;
 }
 
@@ -601,13 +603,19 @@ footer p {
   position: relative;
   background: #9d9d9d;
   background: url(../img/homepage-header-estimate-mob.jpg) center center/cover;
-  padding: 180px 0 40px;
+  padding: 120px 0 0;
 }
 
 @media only screen and (min-width: 768px) {
   .homepage-header {
     background: url(../img/homepage-header-estimate.jpg) left bottom/cover;
-    padding-bottom: 180px;
+    padding: 120px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .homepage-header {
+    padding: 180px 0;
   }
 }
 
@@ -633,12 +641,7 @@ footer p {
   min-height: 425px;
 }
 
-.about-title {
-  margin-bottom: 0;
-}
-
 .about-img {
-  flex: 1 0 100%;
   margin: 1em 0;
 }
 
@@ -649,18 +652,11 @@ footer p {
 }
 
 .about-us-text {
-  flex: 1 0 100%;
   margin: 0 0 40px 0;
 }
 
 @media only screen and (min-width: 992px) {
-  .about-title {
-    margin: 1em 0;
-  }
-
   .about-img {
-    flex: 0 0 48%;
-    width: 48%;
     position: relative;
     margin: 0;
     height: auto;
@@ -675,8 +671,6 @@ footer p {
   }
   
   .about-us-text {
-    flex: 0 0 48%;
-    width: 48%;
     margin: 0 0 85px 20px;
   } 
 }
@@ -719,10 +713,11 @@ footer p {
   padding-bottom: 40px;
 }
 
-.services-title {
-  margin-top: 0;
-  margin-bottom: 1em;
-  align-self: flex-end;
+@media only screen and (min-width: 768px) {
+  .services-title {
+    margin-top: 0;
+    align-self: flex-end;
+  }
 }
 
 .services-subtitle {
@@ -803,6 +798,7 @@ footer p {
 .services-button {
   width: 70%;
   font-size: .9em;
+  margin: 0;
   opacity: 0;
   height: 0;
   padding: 0;
@@ -822,8 +818,15 @@ footer p {
 }
 
 .certifications-icon {
-  height: 75px;
+  height: 60px;
+  max-width: 100%;
   padding: 5px 0;
+}
+
+@media-only screen and (min-width: 768px) {
+  .certifications-icon {
+    height: 75px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -919,6 +922,12 @@ height: 100% !important;
   margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .locations-button {
+    margin-top: auto;
+  }
+}
+
 /* HOMEPAGE: REVIEWS */
 
 .reviews {
@@ -942,7 +951,6 @@ height: 100% !important;
 
 .reviews-title {
   color: #fff;
-  margin-bottom: 1.5em;
   align-self: flex-start;
 }
 
@@ -954,6 +962,16 @@ height: 100% !important;
   border: 1px solid var(--light-gray-color);
   margin-bottom: 40px;
   padding: 1em;
+}
+
+.reviews-item:last-of-type {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-item:last-of-type {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews-item p {
@@ -982,24 +1000,50 @@ height: 100% !important;
 }
 
 .estimate-break {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 6vw;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .estimate-break {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 6vw;
+  }
 }
 
 .estimate-title {
   color: #fff;
 }
 
+.estimate-text {
+  margin-top: 0;
+}
+
 @media only screen and (min-width:768px) {
   .estimate-title {
     text-align: right;
   }
+
+  .estimate-text {
+    margin-top: 1em;
+  }
+}
+
+.estimate-button {
+  margin-bottom: 40px;
 }
 
 .estimate-item {
   z-index: 2;
+  padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .estimate-item {
+    padding-bottom: 0;
+  }
 }
 
 /* ABOUT US */
@@ -1040,7 +1084,12 @@ height: 100% !important;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 0 15%;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-service-picture {
+    padding: 0 15%;
+  }
 }
 
 .about-service-subtitle {
