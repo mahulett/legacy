@@ -65,8 +65,9 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
+  color: #060709;
   color: var(--black-color);
 }
 
@@ -76,12 +77,12 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.827em;
+  font-size:1.999em;
 }
 
 
 h2 {
-  font-size: 1.999em;
+  font-size: 1.414em;
   margin-top: 1.414em;
   margin-bottom: 1.414em;
 }
@@ -90,16 +91,39 @@ h3 {
   font-size: 1.414em;
 }
 
+@media only screen and (min-width:768px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+  font-size: 2.827em;
+  }
+
+  h2 {
+    font-size: 1.999em;
+    margin-top: 1.414em;
+    margin-bottom: 1.414em;
+  }
+
+  h3 {
+  font-size: 1.414em;
+  }
+
+}
+
 p {
 
 }
 
 a {
+  color: #d00000;
   color: var(--dark-red-color);
   text-decoration: none;
 }
 
 a:hover {
+  color: #ed1b24;
   color: var(--red-color);
   text-decoration: none;
 }
@@ -122,28 +146,6 @@ a:hover {
 .section-title {
   text-align: center;
   position: relative;
-}
-
-.section-title:before {
-  position: absolute;
-  top: 0.83em;
-  left: 10%;
-  content: '';
-  display: block;
-  height: 2px;
-  width: 25%;
-  background-color: #B5B5B5;
-}
-
-.section-title:after {
-  position: absolute;
-  top: 0.83em;
-  left: 65%;
-  content: '';
-  display: block;
-  height: 2px;
-  width: 25%;
-  background-color: #B5B5B5;
 }
 
 @media only screen and (min-width: 768px) {
@@ -216,12 +218,14 @@ a:hover {
 }
 
 .content-section-dark {
+  background: #060709;
   background: var(--black-color);
   color: #fff;
 }
 
 .content-callout {
   font-size: 1.414em;
+  color: #d00000;
   color: var(--dark-red-color);
   margin-bottom: 2em;
 }
@@ -273,6 +277,7 @@ a:hover {
 
 .form-field {
   padding: 8px 16px;
+  background: #B5B6B8;
   background: var(--light-gray-color);
   border: 0;
 }
@@ -298,26 +303,33 @@ a:hover {
 }
 
 .button-primary {
+  background: #ed1b24;
   background: var(--red-color);
   color: #fff;
 }
 
 .button-primary:hover {
+  background: #d00000;
   background: var(--dark-red-color);
   color: #fff;
 }
 
 .button-secondary {
+  background: #ffcd2e;
   background: var(--yellow-color);
+  color: #060709;
   color: var(--black-color);
 }
 
 .button-secondary:hover {
+  background: #f8922d;
   background: var(--light-orange-color);
+  color: #060709;
   color: var(--black-color);
 }
 
 .button-tertiary {
+  background: #060709;
   background: var(--black-color);
   color: #fff;
 }
@@ -338,6 +350,7 @@ a:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .flex-half,
@@ -355,33 +368,41 @@ a:hover {
 }
 
 .flex-image {
+  flex-shrink: 0;
   width: 100%;
+  height: auto;
 }
 
 @media only screen and (min-width: 768px) {
   .flex-half {
     flex: 0 0 48%;
     width: 48%;
+    max-width: 48%;
   }
   .flex-third {
     flex: 0 0 30.66%;
     width: 30.66%;
+    max-width: 30.66%;
   }
   .flex-two-thirds {
     flex: 0 0 65.33%;
     width: 65.33%;
+    max-width: 65.33%;
   }
   .flex-fourth {
     flex: 0 0 22%;
     width: 22%;
+    max-width: 22%;
   }
   .flex-three-fourths {
     flex: 0 0 74%;
     width: 74%;
+    max-width: 74%;
   }
   .flex-fourth-full {
     flex: 0 0 25%;
     width: 25%;
+    max-width: 25%;
   }
 }
 
@@ -430,6 +451,7 @@ header {
 }
 
 .nav-links li:hover {
+  background: #ed1b24;
   background: var(--red-color);
 }
 
@@ -506,6 +528,7 @@ header {
   width: 100%;
   height: 100vh;
   z-index: 2;
+  background: #060709;
   background: var(--black-color);
   margin: 0;
   padding: 0;
@@ -554,6 +577,7 @@ header {
 footer {
   padding-top: 40px;
   padding-bottom: 40px;
+  background: #B5B6B8;
   background: var(--light-gray-color);
 }
 
@@ -592,6 +616,7 @@ footer p {
 }
 
 .homepage-header-title {
+  color: #ffcd2e;
   color: var(--yellow-color);
 }
 
@@ -614,14 +639,13 @@ footer p {
 
 .about-img {
   flex: 1 0 100%;
-  height: 200px;
   margin: 1em 0;
 }
 
 .about-us-team {
   width: 100%;
-  height: 100%;
-  background: url(../img/about-us-team-sm.jpg) no-repeat center center/cover;
+  padding-bottom: 75%;
+  background: url(../img/about-us-team.jpg) no-repeat center center/cover;
 }
 
 .about-us-text {
@@ -644,6 +668,7 @@ footer p {
   
   .about-us-team{
     position: absolute;
+    padding-bottom: 0;
     top: 0;
     height: 110%;
     background: url(../img/about-us-team.jpg) no-repeat center center/cover;
@@ -682,6 +707,7 @@ footer p {
 /* HOMEPAGE: SERVICES */
 
 .services {
+  background: #060709;
   background: var(--black-color);
   color: #fff;
 }
@@ -710,7 +736,7 @@ footer p {
 
 .services-item {
   margin: 20px 0;
-  padding: 20px 20px;
+  padding: 20px;
   height: 190px;
   display: flex;
   flex-flow: column nowrap;
@@ -723,6 +749,7 @@ footer p {
 }
 
 .services-item-title {
+  width: 100%;
   margin: 0;
   font-size: 1em;
 }
@@ -858,18 +885,22 @@ height: 100% !important;
 }
 
 .locations-item:nth-child(1) {
+  background: #ffcd2e;
   background: var(--yellow-color);
 }
 
 .locations-item:nth-child(2) {
+  background: #f8922d;
   background: var(--light-orange-color);
 }
 
 .locations-item:nth-child(3) {
+  background: #f3582a;
   background: var(--dark-orange-color);
 }
 
 .locations-item:nth-child(4) {
+  background: #ed1b24;
   background: var(--red-color);
 }
 
@@ -892,6 +923,7 @@ height: 100% !important;
 
 .reviews {
   position: relative;
+  background: #060709;
   background: var(--black-color);
   padding: 1em 0;
 }
@@ -918,6 +950,7 @@ height: 100% !important;
   display: block;
   background: #fff;
   position: relative;
+  border: 1px solid #B5B6B8;
   border: 1px solid var(--light-gray-color);
   margin-bottom: 40px;
   padding: 1em;
@@ -990,6 +1023,7 @@ height: 100% !important;
 
 .about-headshot-title {
   margin-top: -22px;
+  background: #ffcd2e;
   background: var(--yellow-color);
   padding: 8px 16px;
 }
@@ -1002,6 +1036,7 @@ height: 100% !important;
 }
 
 .about-service-picture {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -1010,12 +1045,15 @@ height: 100% !important;
 
 .about-service-subtitle {
   margin-top: -22px;
+  background: #ed1b24;
   background: var(--red-color);
   padding: 8px 16px;
+  z-index: 2;
 }
 
 .about-service-item p {
   margin-top: 0.5em;
+  width: 100%;
 }
 
 /* LOCATIONS */
@@ -1057,11 +1095,13 @@ height: 100% !important;
 
 .faq-list {
   margin-top: 0;
+  color: #616161;
   color: var(--dark-gray-color);
   margin-bottom: 1.999em;
 }
 
 .faq-list a {
+  color: #616161;
   color: var(--dark-gray-color);
 }
 
@@ -1072,6 +1112,7 @@ height: 100% !important;
 
 .faq-break {
   height: 3px;
+  background: #B5B6B8;
   background: var(--light-gray-color);
   margin-top: 40px;
   width: 50%;
@@ -1092,6 +1133,7 @@ height: 100% !important;
 }
 
 .contact-card {
+  background: #B5B6B8;
   background: var(--light-gray-color);
   padding: 20px;
   justify-content: center;
