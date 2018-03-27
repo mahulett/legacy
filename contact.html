@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
   <title>Contact Us | Legacy Autobody</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Russo+One" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Oswald" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
@@ -25,6 +26,7 @@
             <div class="nav-bar"></div>
         </a>
         <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="certifications.html">Certifications</a></li>
           <li><a href="faq.html">FAQs</a></li>
@@ -50,21 +52,22 @@
   </section>
   <section class="content-section">
     <div class="wrapper">
-      <h2 class="content-section-title">Contact Us</h2>
+      <p class="content-callout">We want to hear from you!</p>
+      <p class="content-callout-secondary">Need advice after an accident? Have a question about Legacy Autobody Group? We'd love to help. Please contact us!</p>
       <div class="flex-horizontal">
         <div class="flex-half">
-          <form class="contact-form">
-            <label class="contact-form-margin">Your Name</label>
-            <input class="contact-form-field" type="text">
-            <label class="contact-form-margin">Your Email</label>
-            <input class="contact-form-field" type="email">
-            <label class="contact-form-margin">Tell us how we can help you</label>
-            <textarea class="contact-form-field"></textarea>
-            <input class="button button-primary contact-form-margin" type="submit" value="Get some help">
+          <form class="form">
+            <label>Your name</label>
+            <input class="form-field" type="text">
+            <label class="form-margin">Your email</label>
+            <input class="form-field" type="email">
+            <label class="form-margin">Tell us how we can help you</label>
+            <textarea class="form-field"></textarea>
+            <input class="button button-primary form-submit" type="submit" value="Get some help">
           </form>
         </div>
         <div class="flex-half contact-card flex-horizontal">
-          <div class="flex-half">
+          <div class="flex-half contact-card-location">
             <img class="contact-icon" src="img/contact-icon.svg" alt="Location icon">
             <p class="contact-subtitle">CARSTAR Allentown<br>
             Duncan Autobody</p>
@@ -72,7 +75,7 @@
             Allentown, PA 18103<br>
             610-395-2251</p>
           </div>
-          <div class="flex-half">
+          <div class="flex-half contact-card-location">
             <img class="contact-icon" src="img/contact-icon.svg" alt="Location icon">
             <p class="contact-subtitle">CARSTAR Quakertown<br>
             Duncan Autobody</p>
@@ -80,7 +83,7 @@
             Quakertown, PA 18951<br>
             215-536-2745</p>
           </div>
-          <div class="flex-half">
+          <div class="flex-half contact-card-location">
             <img class="contact-icon" src="img/contact-icon.svg" alt="Location icon">
             <p class="contact-subtitle">CARSTAR Easton<br>
             Scott's Collision Center</p>
@@ -88,7 +91,7 @@
             Easton, PA 18040<br>
             610-253-1528</p>
           </div>
-          <div class="flex-half">
+          <div class="flex-half contact-card-location">
             <img class="contact-icon" src="img/contact-icon.svg" alt="Location icon">
             <p class="contact-subtitle">CARSTAR Allentown<br>
             Scott's Collision Center</p>
@@ -100,3 +103,47 @@
       </div>
     </div>
   </section>
+  <footer>
+    <div class="wrapper">
+      <div class="flex-horizontal">
+        <div class="flex-third">
+          <img class="footer-logo" src="img/logo-footer.svg" alt="Legacy Autobody" title="Legacy Autobody">
+          <p>&#9400; 2018 Legacy Autobody Group<br>Created by <a href="https://movingtargets.com" target="_blank">Moving Targets</a></p>
+        </div>
+        <div class="flex-two-thirds">
+          <div class="flex-horizontal">
+            <div class="flex-half-mob flex-fourth">
+              <p class="footer-title">CARSTAR Allentown</p>
+              <p>Duncan Autobody<br>
+              1324 Minesite Rd.<br>
+              Allentown, PA 18103<br>
+              610-395-2251</p>
+            </div>
+            <div class="flex-half-mob flex-fourth">
+              <p class="footer-title">CARSTAR Quakertown</p>
+              <p>Duncan Autobody<br>
+              943 Rock Hill Rd.<br>
+              Quakertown, PA 18951<br>
+              215-536-2745</p>
+            </div>
+            <div class="flex-half-mob flex-fourth">
+              <p class="footer-title">CARSTAR Easton</p>
+              <p>Scott's Collision Center<br>
+              3715 Sullivan Trail<br>
+              Easton, PA 18040<br>
+              610-253-1528</p>
+            </div>
+            <div class="flex-half-mob flex-fourth">
+              <p class="footer-title">CARSTAR Stroudsburg</p>
+              <p>Scott's Collision Center<br>
+              650 Bartonsville Woods Rd., Stroudsburg, PA 18360<br>
+              570-629-4250</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/nav-menu.js"></script>
+</body>
+</html>
