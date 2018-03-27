@@ -1267,3 +1267,8 @@ height: 100% !important;
     background: url(../img/testimonials-header.jpg) center top/cover;
   }
 }
+
+/* EMPLOYMENT */
+.employment-header {
+  background: url(../img/employment-header.jpg) center center/cover;
+}
