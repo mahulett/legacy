@@ -359,6 +359,7 @@ a:hover {
 .flex-third,
 .flex-two-thirds,
 .flex-fourth,
+.flex-fifth,
 .flex-three-fourths,
 .flex-fourth-full {
   flex: 1 0 100%;
@@ -405,6 +406,11 @@ a:hover {
     flex: 0 0 25%;
     width: 25%;
     max-width: 25%;
+  }
+  .flex-fifth {
+    flex: 0 0 16.8%;
+    width: 16.8%;
+    max-width: 16.8%;
   }
 }
 
@@ -1263,6 +1269,21 @@ height: 100% !important;
 @media only screen and (min-width: 768px) {
   .testimonials-header {
     background: url(../img/testimonials-header.jpg) center top/cover;
+  }
+}
+
+.reviews-widget {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.reviews-widget:last-of-type {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-widget:last-of-type {
+    margin-bottom: 40px;
   }
 }
 

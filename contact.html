@@ -58,46 +58,59 @@
         <div class="flex-half">
           <form class="form">
             <label>Your name</label>
-            <input class="form-field" type="text">
+            <input class="form-field" type="text" required>
             <label class="form-margin">Your email</label>
-            <input class="form-field" type="email">
+            <input class="form-field" type="email" required>
+            <label class="form-margin">Your phone number</label>
+            <input class="form-field" type="tel" required>
+            <label class="form-margin">Your location</label>
+            <select class="form-field" required>
+              <option>CARSTAR Allentown</option>
+              <option>CARSTAR Easton</option>
+              <option>CARSTAR Quakertown</option>
+              <option>CARSTAR Stroudsburg</option>
+            </select>
             <label class="form-margin">Tell us how we can help you</label>
-            <textarea class="form-field"></textarea>
+            <textarea class="form-field" required></textarea>
             <input class="button button-primary form-submit" type="submit" value="Get some help">
           </form>
         </div>
         <div class="flex-half contact-card flex-horizontal">
           <div class="flex-half contact-card-location">
-            <img class="contact-icon" src="img/contact-icon.svg" alt="Location icon">
+            <a href="https://www.google.com/maps/place/CARSTAR+Allentown+Duncan+Autobody/@40.5599475,-75.544256,15z/data=!4m2!3m1!1s0x0:0xb6851cdc3f4fae67?sa=X&ved=0ahUKEwiFuIee357aAhXndN8KHU8cBvwQ_BIIhAEwCg" target="_blank"><img class="contact-icon" src="img/contact-icon.svg" alt="Location icon"></a>
             <p class="contact-subtitle">CARSTAR Allentown<br>
             Duncan Autobody</p>
             <p>1324 Minesite Rd.<br>
             Allentown, PA 18103<br>
-            610-395-2251</p>
+            <a href="tel:6103952251">610-395-2251</a><br>
+            <a href="mailto:allentown@carstarlv.com">allentown@carstarlv.com</a></p>
           </div>
           <div class="flex-half contact-card-location">
-            <img class="contact-icon" src="img/contact-icon.svg" alt="Location icon">
+            <a href="https://www.google.com/maps/place/CARSTAR+Quakertown+Duncan+Autobody/@40.430612,-75.296999,15z/data=!4m2!3m1!1s0x0:0xeaae817b65bbc9df?sa=X&ved=0ahUKEwiFx5i2357aAhWoZd8KHcNoBdQQ_BIIcTAK" target="_blank"><img class="contact-icon" src="img/contact-icon.svg" alt="Location icon"></a>
             <p class="contact-subtitle">CARSTAR Quakertown<br>
             Duncan Autobody</p>
             <p>943 Rock Hill Rd.<br>
             Quakertown, PA 18951<br>
-            215-536-2745</p>
+            <a href="tel:2155362745">215-536-2745</a><br>
+            <a href="mailto:quakertown@carstarlv.com">quakertown@carstarlv.com</a></p>
           </div>
           <div class="flex-half contact-card-location">
-            <img class="contact-icon" src="img/contact-icon.svg" alt="Location icon">
+            <a href="https://www.google.com/maps/place/Carstar+Easton+-+Scott's+Collision/@40.7421535,-75.2400029,15z/data=!4m2!3m1!1s0x0:0x7df344f0cbb46905?sa=X&ved=0ahUKEwiHg9e9357aAhUHMd8KHWaqDkgQ_BIIfjAK" target="_blank"><img class="contact-icon" src="img/contact-icon.svg" alt="Location icon"></a>
             <p class="contact-subtitle">CARSTAR Easton<br>
             Scott's Collision Center</p>
             <p>3715 Sullivan Trail<br>
             Easton, PA 18040<br>
-            610-253-1528</p>
+            <a href="tel:6102531528">610-253-1528</a><br>
+            <a href="mailto:easton@carstarlv.com">easton@carstarlv.com</a></p>
           </div>
           <div class="flex-half contact-card-location">
-            <img class="contact-icon" src="img/contact-icon.svg" alt="Location icon">
-            <p class="contact-subtitle">CARSTAR Allentown<br>
+            <a href="https://www.google.com/maps/place/CARSTAR+Stroudsburg-+Scott's+Collision/@40.9931635,-75.3427619,15z/data=!4m2!3m1!1s0x0:0x47354c548d364e83?sa=X&ved=0ahUKEwis0sXE357aAhWPON8KHSAhA3QQ_BIIdDAK" target="_blank"><img class="contact-icon" src="img/contact-icon.svg" alt="Location icon"></a>
+            <p class="contact-subtitle">CARSTAR Stroudsburg<br>
             Scott's Collision Center</p>
             <p>650 Bartonsville Woods Rd.<br>
             Stroudsburg, PA 18360<br>
-            570-629-4250</p>
+            <a href="tel:5706294250">570-629-4250</a><br>
+            <a href="mailto:stroudsburg@carstarlv.com">stroudsburg@carstarlv.com</a></p>
           </div>
         </div>
       </div>
@@ -136,7 +149,8 @@
             <div class="flex-half-mob flex-fourth">
               <p class="footer-title">CARSTAR Stroudsburg</p>
               <p>Scott's Collision Center<br>
-              650 Bartonsville Woods Rd., Stroudsburg, PA 18360<br>
+              650 Bartonsville Woods Rd.<br>
+              Stroudsburg, PA 18360<br>
               570-629-4250</p>
             </div>
           </div>
