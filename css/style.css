@@ -339,7 +339,11 @@ a:hover {
 
 /* ICONS */
 
-
+.phone-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
 
 
 
@@ -473,6 +477,8 @@ header {
 
 .nav-callout-location {
   padding-top: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .nav-callout-phone {
@@ -484,9 +490,24 @@ header {
   margin-top: 10px;
 }
 
+.nav-callout-slide {
+  display: none;
+}
+
 @media only screen and (min-width:1024px) {
   .nav-callout {
     display: none;
+  }
+
+  .nav-callout-slide {
+    display: none;
+  }
+
+  .nav-callout-slide.nav-callout-active {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -519,7 +540,7 @@ header {
 .nav-links {
   list-style-type: none;
   margin-left: auto;
-  margin-right: 188px;
+  margin-right: 196px;
   padding: 0;
 }
 
@@ -647,6 +668,7 @@ header {
 
   .nav-focus {
     display: block;
+    min-width: 192px;
     border: 2px solid #fff;
     border-top: 0;
     position: absolute;
@@ -658,8 +680,24 @@ header {
     background: var(--red-color);
   }
 
-  .nav-links a, .nav-focus a {
+  .nav-focus a {
     color: #fff;
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+
+  .nav-focus a:hover {
+    background: #fff;
+    color: #ed1b24;
+    color: var(--red-color);
+  }
+
+  .nav-focus a .phone-icon .st0 {
+    transition: fill 0.2s ease-in;
+  }
+
+  .nav-focus a:hover .phone-icon .st0 {
+    fill: #ed1b24;
+    fill: var(--red-color);
   }
 
   .nav-focus-primary, .nav-focus-secondary {
