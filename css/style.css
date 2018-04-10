@@ -38,6 +38,7 @@
   --light-orange-color: #f8922d;
   --yellow-color: #ffcd2e;
   --light-gray-color: #B5B6B8;
+  --gray-color: #919294;
   --dark-gray-color: #616161;
 }
 
@@ -434,7 +435,11 @@ header {
   background: var(--red-color);
   text-align: center;
   padding: 10px;
+}
+
+.nav-callout .nav-focus-primary {
   font-size: 1.414em;
+  z-index: 2;
 }
 
 .nav-callout a {
@@ -443,16 +448,40 @@ header {
 
 .nav-callout-menu {
   display: none;
+  z-index: -1;
 }
 
 .nav-callout-menu.nav-callout-active {
   display: block;
-  position : absolute;
-  top: 0;
+  position: absolute;
+  padding: 0;
+  top: 51px;
+  left: 0;
+  margin: 0;
   width: 100%;
   height: 100vh;
   background: #B5B6B8;
   background: var(--light-gray-color);
+  animation-name: slideInDown;
+  animation-duration: 0.6s;
+}
+
+.nav-callout-menu.nav-callout-active li {
+  display: block;
+  font-size: 1.2em;
+}
+
+.nav-callout-location {
+  padding-top: 20px;
+}
+
+.nav-callout-phone {
+  display: block;
+}
+
+.nav-callout-button {
+  font-size: 0.707em;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width:1024px) {
@@ -746,8 +775,8 @@ header {
 }
 
 .nav-dropdown-item:hover {
-  background: #ed1b24;
-  background: var(--dark-gray-color);
+  background: #919294;
+  background: var(--gray-color);
 }
 
 .nav-dropdown-item:nth-child(2) {
@@ -783,7 +812,7 @@ footer p {
 
 #homepage-header {
   position: relative;
-  padding: 120px 0 0;
+  padding: 200px 0 0;
 }
 
 @media only screen and (min-width: 768px) {
