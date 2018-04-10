@@ -7,7 +7,6 @@
 	<title>Legacy Autobody</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Oswald" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
@@ -17,6 +16,15 @@
 
 <body>
 	<header>
+		<div class="nav-callout">
+			<a class="nav-focus-primary" href="#" onclick="openCalloutMenu()">Call Now</a>
+			<ul class="nav-callout-menu">
+				<li>CARSTAR Allentown <a href="tel:6103952251">610-395-2251</a></li>
+				<li>CARSTAR Quakertown <a href="tel:2155362745">215-536-2745</a></li>
+				<li>CARSTAR Easton <a href="tel:6102531528">610-253-1528</a></li>
+				<li>CARSTAR Stroudsburg <a href="tel:5706294250">570-629-4250</a></li>
+			</ul>
+		</div>
 		<div class="wrapper">
 			<nav class="nav">
 				<div class="nav-logo">
@@ -25,16 +33,35 @@
 				<a href="#" class="nav-icon" onclick="openNavMenu()">
 						<div class="nav-bar"></div>
 				</a>
-				<div class="nav-focus"><a href="#">Free Estimate</a></div>
+				<div class="nav-focus">
+					<a class="nav-focus-primary" href="https://www.bodyshop.systems/quoteoptions.php?BodyShopID=304" target="_blank">Call Now</a>
+					<a class="nav-focus-secondary" href="https://www.bodyshop.systems/quoteoptions.php?BodyShopID=304" target="_blank">Free Estimate Tool</a></div>
         <ul class="nav-links" id="nav-menu">
-        	<li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
-          <li><a href="faq.html">FAQs</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="employment.html">Employment</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        	<li>
+        		<a href="index.html">Home</a>
+        	</li>
+          <li class="nav-dropdown">
+          	<a class="nav-dropdown-link" href="about.html">About Us</a>
+          	<div class="nav-dropdown-button" onclick="openNavSubMenu()">
+          		<div class="nav-dropdown-arrow"></div>
+          	</div>
+          	<div class="nav-dropdown-list">
+          		<a class="nav-dropdown-item" href="certifications.html">Certifications</a>
+          		<a class="nav-dropdown-item" href="employment.html">Employment</a>
+          	</div>
+          </li>
+          <li>
+          	<a href="faq.html">FAQs</a>
+          </li>
+          <li>
+          	<a href="testimonials.html">Testimonials</a>
+          </li>
+          <li>
+          	<a href="locations.html">Locations</a>
+          </li>
+          <li>
+          	<a href="contact.html">Contact</a>
+          </li>
         </ul>
 			</nav>
 		</div>
@@ -247,7 +274,7 @@
 			<div class="flex-horizontal">
 				<div class="flex-half">
 					<p class="estimate-text">Get an estimate quickly right from your phone! Our Smart Estimating Tool will show you how to capture all the information we need to prepare an estimate for you. For best results text it to your phone.</p>
-					<a class="button button-primary estimate-button" href="reviews.html">Learn more</a>
+					<a class="button button-primary estimate-button" href="https://www.bodyshop.systems/quoteoptions.php?BodyShopID=304">Learn more</a>
 				</div>
 				<div class="flex-half estimate-item">
 					<img class="flex-image" src="img/estimate-demo.jpg" alt="Estimate tool demo">
