@@ -7,7 +7,6 @@
 	<title>Legacy Autobody</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Oswald" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
@@ -17,6 +16,15 @@
 
 <body>
 	<header>
+		<div class="nav-callout">
+			<a class="nav-focus-primary" href="#" onclick="openCalloutMenu()">Call Now</a>
+			<ul class="nav-callout-menu">
+				<li>CARSTAR Allentown <a href="tel:6103952251">610-395-2251</a></li>
+				<li>CARSTAR Quakertown <a href="tel:2155362745">215-536-2745</a></li>
+				<li>CARSTAR Easton <a href="tel:6102531528">610-253-1528</a></li>
+				<li>CARSTAR Stroudsburg <a href="tel:5706294250">570-629-4250</a></li>
+			</ul>
+		</div>
 		<div class="wrapper">
 			<nav class="nav">
 				<div class="nav-logo">
@@ -25,31 +33,85 @@
 				<a href="#" class="nav-icon" onclick="openNavMenu()">
 						<div class="nav-bar"></div>
 				</a>
+				<div class="nav-focus">
+					<a class="nav-focus-primary" href="https://www.bodyshop.systems/quoteoptions.php?BodyShopID=304" target="_blank">Call Now</a>
+					<a class="nav-focus-secondary" href="https://www.bodyshop.systems/quoteoptions.php?BodyShopID=304" target="_blank">Free Estimate Tool</a></div>
         <ul class="nav-links" id="nav-menu">
-        	<li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
-          <li><a href="faq.html">FAQs</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="employment.html">Employment</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="nav-links-focus"><a href="#">Free Estimate</a></li>
+        	<li>
+        		<a href="index.html">Home</a>
+        	</li>
+          <li class="nav-dropdown">
+          	<a class="nav-dropdown-link" href="about.html">About Us</a>
+          	<div class="nav-dropdown-button" onclick="openNavSubMenu()">
+          		<div class="nav-dropdown-arrow"></div>
+          	</div>
+          	<div class="nav-dropdown-list">
+          		<a class="nav-dropdown-item" href="certifications.html">Certifications</a>
+          		<a class="nav-dropdown-item" href="employment.html">Employment</a>
+          	</div>
+          </li>
+          <li>
+          	<a href="faq.html">FAQs</a>
+          </li>
+          <li>
+          	<a href="testimonials.html">Testimonials</a>
+          </li>
+          <li>
+          	<a href="locations.html">Locations</a>
+          </li>
+          <li>
+          	<a href="contact.html">Contact</a>
+          </li>
         </ul>
 			</nav>
 		</div>
 	</header>
-	<section class="homepage-header">
-		<div class="wrapper">
-			<div class="flex-horizontal">
-				<div class="flex-two-thirds">
-				</div>
-				<div class="flex-third homepage-header-item">
-				<h1 class="homepage-header-title">Free Estimate Tool</h1>
-				<p class="homepage-header-subtitle">Get a free estimate quickly right from your phone.</p>
-				<a class="button button-primary" href="#">Get my estimate</a>
+	<section id="homepage-header" class="homepage-header-estimate fade">
+		<div class="slideshow">
+			<div class="slide fade">
+				<div class="wrapper">
+					<div class="flex-horizontal">
+						<div class="flex-two-thirds">
+						</div>
+						<div class="flex-third homepage-header-item">
+						<h1 class="homepage-header-title">Free Estimate Tool</h1>
+						<p class="homepage-header-subtitle">Get a free estimate quickly right from your phone.</p>
+						<a class="button button-primary" href="#">Get my estimate</a>
+						</div>
+					</div>
 				</div>
 			</div>
+			<div class="slide fade">
+				<div class="wrapper">
+					<div class="flex-horizontal">
+						<div class="flex-two-thirds">
+						</div>
+						<div class="flex-third homepage-header-item">
+						<h1 class="homepage-header-title">Safety First</h1>
+						<p class="homepage-header-subtitle">Our certified technicians make sure your car is safe for your family.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide fade">
+				<div class="wrapper">
+					<div class="flex-horizontal">
+						<div class="flex-two-thirds">
+						</div>
+						<div class="flex-third homepage-header-item">
+						<h1 class="homepage-header-title">Quality Guaranteed</h1>
+						<p class="homepage-header-subtitle">We proudly stand behind our work.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="slide-prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="slide-next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	  <div class="slide-dots">
+		  <span class="slide-dot" onclick="currentSlide(1)"></span> 
+		  <span class="slide-dot" onclick="currentSlide(2)"></span> 
+		  <span class="slide-dot" onclick="currentSlide(3)"></span> 
 		</div>
 		<svg class="section-break" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 			<polygon fill="#fff" points="0,100 100,0 100,100"/>
@@ -212,7 +274,7 @@
 			<div class="flex-horizontal">
 				<div class="flex-half">
 					<p class="estimate-text">Get an estimate quickly right from your phone! Our Smart Estimating Tool will show you how to capture all the information we need to prepare an estimate for you. For best results text it to your phone.</p>
-					<a class="button button-primary estimate-button" href="reviews.html">Learn more</a>
+					<a class="button button-primary estimate-button" href="https://www.bodyshop.systems/quoteoptions.php?BodyShopID=304">Learn more</a>
 				</div>
 				<div class="flex-half estimate-item">
 					<img class="flex-image" src="img/estimate-demo.jpg" alt="Estimate tool demo">
@@ -256,7 +318,8 @@
 						<div class="flex-half-mob flex-fourth">
 							<p class="footer-title">CARSTAR Stroudsburg</p>
 							<p>Scott's Collision Center<br>
-		          650 Bartonsville Woods Rd., Stroudsburg, PA 18360<br>
+		          650 Bartonsville Woods Rd.<br>
+		          Stroudsburg, PA 18360<br>
 		          570-629-4250</p>
 						</div>
 					</div>
@@ -264,6 +327,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/slideshow.js"></script>
 	<script src="js/nav-menu.js"></script>
 </body>
 </html>
